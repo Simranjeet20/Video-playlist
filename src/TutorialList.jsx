@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Col, Container, ListGroup, ListGroupItem, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import IndividualItem from './IndividualItem'
 
 export default function TutorialList() {
     const topic=[
@@ -36,16 +37,7 @@ export default function TutorialList() {
                 return(<>
                <Container>
                 <ListGroup.Item>
-                    <Row>
-                        <Col className='col-md-8'>
-                        {index +1}.{value.name}
-                        </Col>
-                        <Col className='col-md-4'>
-                            <Link to={"/video?id=" +value.link} className='ms-2 px-4 py-1' variant='success'>
-                        <Button>Click me</Button>
-                        </Link>
-                        </Col>
-                    </Row>
+                   <IndividualItem value={value} index={index}/>
                 </ListGroup.Item>
                 </Container>
                 

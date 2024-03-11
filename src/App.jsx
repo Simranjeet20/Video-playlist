@@ -8,7 +8,7 @@ export default function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Dashboard />}/>
-      <Route path='/Video'element={<VideoPlay />} />
+      <Route path='/video'element={<VideoPlay />} />
     </Routes>
     </BrowserRouter>
   )
